@@ -75,6 +75,3 @@ DerivedDataCache/*
 .idea/.idea.GGJ/.idea/encodings.xml
 .idea/.idea.GGJ/.idea/indexLayout.xml
 .idea/.idea.GGJ/.idea/vcs.xml
-
-# Ignore all files and directories in Plugins
-Plugins/*
