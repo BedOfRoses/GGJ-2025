@@ -12,13 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a202670a-8d89-48f5-8dbe-7573ce1390ab" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/StarterContent/Blueprints/Blueprint_CeilingLight.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_GameStateWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_GameStateWidget.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_ShopWidget.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_ShopWidget.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GGJ/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GGJ/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/UI_GameMode/BP_UI_Test_GameMode.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/UI_GameMode/BP_UI_Test_GameMode.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_MainHUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_MainHUD.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/UI/WBP_MainWidgetSwitcher.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/UI/WBP_MainWidgetSwitcher.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GGJ/GGJ.Build.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GGJ/GGJ.Build.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GGJ/UI/MainHUD.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GGJ/UI/MainHUD.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/GGJ/UI/MainHUD.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GGJ/UI/MainHUD.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/GGJ/UI/MainWidgetSwitcher.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GGJ/UI/MainWidgetSwitcher.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/GGJ/UI/MainWidgetSwitcher.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/GGJ/UI/MainWidgetSwitcher.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,41 +32,47 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "BedOfRoses"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;BedOfRoses&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/BedOfRoses/GGJ-2025.git",
-    "accountId": "adf8c942-7896-4375-b1ca-fb03caf44756"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/BedOfRoses/GGJ-2025.git&quot;,
+    &quot;accountId&quot;: &quot;adf8c942-7896-4375-b1ca-fb03caf44756&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+}</component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Epic Games/UE_5.4/Engine/Source/Runtime/UMG/Public/Components/SlateWrapperTypes.h" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="Toolset" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2s6J014SCEssvyhbKqc2VZBaefs" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ Project.GGJ.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "feature-GGJ-1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ Project.GGJ.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;feature-GGJ-1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="C/C++ Project.GGJ">
     <configuration name="GGJ" type="CppProject" factoryName="C++ Project">
       <configuration_1 setup="1">
@@ -143,7 +150,10 @@
       <method v="2" />
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile" />
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
   </component>
@@ -156,6 +166,7 @@
       <option name="presentableId" value="Default" />
       <updated>1737769865615</updated>
       <workItem from="1737769867098" duration="1613000" />
+      <workItem from="1737819010098" duration="9292000" />
     </task>
     <servers />
   </component>
@@ -168,7 +179,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/www" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
