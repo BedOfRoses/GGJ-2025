@@ -3,3 +3,7 @@
 
 #include "GameStateWidget.h"
 
+void UGameStateWidget::NativeConstruct()
+{
+	Super::NativeConstruct();
+}

@@ -3,3 +3,7 @@
 
 #include "ShopWidget.h"
 
+void UShopWidget::NativeConstruct()
+{
+	Super::NativeConstruct();
+}

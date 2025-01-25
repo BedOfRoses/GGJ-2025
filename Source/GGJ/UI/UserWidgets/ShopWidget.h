@@ -13,5 +13,7 @@ UCLASS()
 class GGJ_API UShopWidget : public UUserWidget
 {
 	GENERATED_BODY()
-	
+
+protected:
+	virtual void NativeConstruct() override;
 };
