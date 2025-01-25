@@ -16,8 +16,10 @@ public:
 	AObstacleBase();
 	virtual void Tick(float DeltaTime) override;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TObjectPtr<USphereComponent> CollisionVolume;
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite)
+	int32 SpawnChance= 0;
+
 protected:
 	virtual void BeginPlay() override;
 
