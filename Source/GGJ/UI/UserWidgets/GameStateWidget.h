@@ -25,5 +25,24 @@ protected:
 	TObjectPtr<UButton> RestartButton;
 
 	UPROPERTY(meta = (BindWidget))
+	TObjectPtr<UButton> ShopButton;
+
+	UPROPERTY(meta = (BindWidget))
 	TObjectPtr<UButton> QuitButton;
+
+
+	// StartButton Function that will close collapse main widget switcher
+	UFUNCTION()
+	void OnStartButtonClicked();
+
+	UFUNCTION()
+	void OnRestartButtonClicked();
+
+	UFUNCTION()
+	void OnShopButtonButtonClicked();
+
+	UFUNCTION()
+	void OnQuitButtonClicked();
+	
+	
 };

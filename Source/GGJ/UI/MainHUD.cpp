@@ -10,19 +10,7 @@
 #include "Editor/UnrealEd/Public/EditorViewportClient.h"
 
 
-void AMainHUD::PrintViewportCount()
-{
-	if (GEditor)
-	{
-		int32 ViewportCount = GEditor->GetAllViewportClients().Num();
-		UE_LOG(LogTemp, Log, TEXT("Number of Viewports: %d"), ViewportCount);
-	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("GEditor is nullptr"));
-	}
-	
-}
+
 
 AMainHUD::AMainHUD()
 {
@@ -42,22 +30,34 @@ void AMainHUD::BeginPlay()
 {
 	Super::BeginPlay();
 
+
+	// Player Controller. Set to UI
+	if (TObjectPtr<APlayerController> PlayerController = GetWorld()->GetFirstPlayerController())
+	{
+		//
+		// FInputModeGameAndUI InputModeData;
+		// InputModeData.
+		
+		PlayerController->bShowMouseCursor = true;
+		PlayerController->bEnableClickEvents = true;
+		PlayerController->bEnableMouseOverEvents = true;
+		UE_LOG(LogTemp,Warning, TEXT("PlayerController : bShowMouseCursor = true"));
+	}
+	
+	
 	if (MainWidgetSwitcherClass)
 	{
-		MainWidgetSwitcher = CreateWidget<UUserWidget>(GetGameInstance(), MainWidgetSwitcherClass);
+		MainWidgetSwitcher = CreateWidget<UMainWidgetSwitcher>(GetGameInstance(), MainWidgetSwitcherClass);
 		if (MainWidgetSwitcher)
 		{
 			MainWidgetSwitcher->AddToViewport();
 			MainWidgetSwitcher->SetVisibility(ESlateVisibility::Visible); // Fuck den her va sotte til collapsed...
-			UE_LOG(LogTemp, Warning, TEXT("HUD added to viewport"));
+
+			// MainWidgetSwitcher->CallRemoteFunction()
+
+			
 		}
-		else
-		{
-			UE_LOG(LogTemp, Warning, TEXT("MainWidgetSwitcher is nullptr"));
-		}
+	
 	}
-	else
-	{
-		UE_LOG(LogTemp, Warning, TEXT("MainWidgetSwitcherClass is nullptr"));
-	}
+
 }

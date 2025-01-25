@@ -21,9 +21,7 @@ public:
 
 
 	UPROPERTY(EditAnywhere)
-	TObjectPtr<UUserWidget> MainWidgetSwitcher;
-
-	void PrintViewportCount();
+	TObjectPtr<UMainWidgetSwitcher> MainWidgetSwitcher;
 
 	AMainHUD();
 

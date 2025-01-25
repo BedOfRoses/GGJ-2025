@@ -9,4 +9,5 @@ void UMainWidgetSwitcher::NativeConstruct()
 	Super::NativeConstruct();
 
 	MainWidgetSwitcher->SetActiveWidgetIndex(1);
+	UE_LOG(LogTemp, Warning, TEXT("SetActiveWidgetIndex(1)"));
 }
