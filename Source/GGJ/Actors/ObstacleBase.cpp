@@ -11,6 +11,7 @@ AObstacleBase::AObstacleBase()
 	PrimaryActorTick.bCanEverTick = true;
 	CollisionVolume = CreateDefaultSubobject<USphereComponent>(TEXT("CollisionVolume"));
 	CollisionVolume->SetSphereRadius(100.0f);
+	AActor::SetLifeSpan(15.0f);
 }
 
 void AObstacleBase::BeginPlay()
