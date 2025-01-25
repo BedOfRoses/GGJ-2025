@@ -24,10 +24,14 @@ protected:
 	virtual void SetupInputComponent() override;
 private:
 	void Move(const FInputActionValue& InputActionValue);
+	void LookAt(const FInputActionValue& InputActionValue);
 	
 	UPROPERTY(EditAnywhere, Category=Input)
 	TObjectPtr<UInputMappingContext> InputMappingContext;
 
 	UPROPERTY(EditAnywhere, Category=Input)
 	TObjectPtr<UInputAction> MoveAction;
+
+	UPROPERTY(EditAnywhere, Category=Input)
+	TObjectPtr<UInputAction> LookAtAction;
 };

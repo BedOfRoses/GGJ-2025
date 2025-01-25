@@ -29,6 +29,7 @@ void ABubblePlayerController::SetupInputComponent()
 	UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(InputComponent);
 
 	EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &ABubblePlayerController::Move);
+	EnhancedInputComponent->BindAction(LookAtAction, ETriggerEvent::Triggered, this, &ABubblePlayerController::LookAt);
 }
 
 void ABubblePlayerController::Move(const FInputActionValue& InputActionValue)
@@ -44,5 +45,15 @@ void ABubblePlayerController::Move(const FInputActionValue& InputActionValue)
 	{
 		ControlledPawn->AddMovementInput(ForwardDirection, InputAxisVector.Y);
 		ControlledPawn->AddMovementInput(RightDirection, InputAxisVector.X);
+	}
+}
+
+void ABubblePlayerController::LookAt(const FInputActionValue& InputActionValue)
+{
+	const FVector2D InputAxisVector = InputActionValue.Get<FVector2D>();
+	if (APawn* ControlledPawn = GetPawn<APawn>())
+	{
+		ControlledPawn->AddControllerYawInput(InputAxisVector.X);
+		ControlledPawn->AddControllerPitchInput(InputAxisVector.Y);
 	}
 }
