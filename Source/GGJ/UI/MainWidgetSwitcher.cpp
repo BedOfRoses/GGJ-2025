@@ -3,3 +3,8 @@
 
 #include "MainWidgetSwitcher.h"
 
+
+void UMainWidgetSwitcher::NativeConstruct()
+{
+	Super::NativeConstruct();
+}

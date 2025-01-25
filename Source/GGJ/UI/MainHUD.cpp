@@ -20,4 +20,6 @@ void AMainHUD::Tick(float DeltaSeconds)
 void AMainHUD::BeginPlay()
 {
 	Super::BeginPlay();
+
+	UE_LOG(LogTemp, Warning, TEXT("AMainHUD::BeginPlay()"));
 }
