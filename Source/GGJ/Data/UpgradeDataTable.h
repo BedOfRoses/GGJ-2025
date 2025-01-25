@@ -10,6 +10,7 @@
 UENUM(BlueprintType)
 enum class EUpgradeType : uint8
 {
+	// Categories for upgrades!
 	Health,
 	Movement,
 };
@@ -26,6 +27,15 @@ struct FUpgradeData
 	TSoftObjectPtr<UTexture2D> UpgradeIcon;
 };
 
+USTRUCT(BlueprintType)
+struct FUpgradeDataArray
+{
+	GENERATED_BODY()
+	
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
+	TArray<FUpgradeData> UpgradeData;
+};
+
 /**
  * 
  */
@@ -35,5 +45,5 @@ struct FUpgradeDataTable : public FTableRowBase
 	GENERATED_BODY()
 	
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	TMap<EUpgradeType, FUpgradeData> Upgrades;
+	TMap<EUpgradeType, FUpgradeDataArray> Upgrades;
 };
