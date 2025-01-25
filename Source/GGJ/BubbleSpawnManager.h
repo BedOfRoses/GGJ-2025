@@ -4,9 +4,11 @@
 
 #include "CoreMinimal.h"
 #include "Bubble.h"
+#include "Actors/ObstacleBase.h"
 #include "Engine/TargetPoint.h"
 #include "GameFramework/Actor.h"
 #include "BubbleSpawnManager.generated.h"
+
 
 UCLASS()
 class GGJ_API ABubbleSpawnManager : public AActor
@@ -32,8 +34,9 @@ UStaticMeshComponent* LevelFloor;
 UPROPERTY(EditAnywhere,BlueprintReadWrite,Category=BubbleManager)
 	int32 MaxBubblesAlive = 500;
 
+UPROPERTY(EditAnywhere,BlueprintReadWrite,Category=BubbleManager)	
+TArray<TSubclassOf<AObstacleBase>> AllObstacles;
 	
-
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
