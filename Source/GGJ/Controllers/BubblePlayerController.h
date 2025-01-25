@@ -10,6 +10,8 @@
  * 
  */
 class UInputMappingContext;
+class UInputAction;
+struct FInputActionValue;
 
 UCLASS()
 class GGJ_API ABubblePlayerController : public APlayerController
@@ -19,7 +21,13 @@ public:
 	ABubblePlayerController();
 protected:
 	virtual void BeginPlay() override;
+	virtual void SetupInputComponent() override;
 private:
+	void Move(const FInputActionValue& InputActionValue);
+	
 	UPROPERTY(EditAnywhere, Category=Input)
 	TObjectPtr<UInputMappingContext> InputMappingContext;
+
+	UPROPERTY(EditAnywhere, Category=Input)
+	TObjectPtr<UInputAction> MoveAction;
 };

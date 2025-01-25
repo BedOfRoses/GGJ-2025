@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+#include "GGJ/BubbleSpawnManager.h"
 #include "BubblePlayerCharacter.generated.h"
 
 UCLASS()
@@ -13,6 +14,8 @@ class GGJ_API ABubblePlayerCharacter : public ACharacter
 
 public:
 	ABubblePlayerCharacter();
+	 UPROPERTY(EditAnywhere,BlueprintReadWrite,Category=BubblePlayer)
+	TSubclassOf<ABubbleSpawnManager> BubbleSpawnManager; 
 
 protected:
 	virtual void BeginPlay() override;
