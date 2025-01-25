@@ -17,7 +17,13 @@ class GGJ_API AMainHUD : public AHUD
 
 public:
 	UPROPERTY(EditAnywhere)
-	TObjectPtr<UMainWidgetSwitcher> MainWidgetSwitcher;
+	TSubclassOf<UUserWidget> MainWidgetSwitcherClass;
+
+
+	UPROPERTY(EditAnywhere)
+	TObjectPtr<UUserWidget> MainWidgetSwitcher;
+
+	void PrintViewportCount();
 
 	AMainHUD();
 

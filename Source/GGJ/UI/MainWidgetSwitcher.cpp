@@ -7,4 +7,6 @@
 void UMainWidgetSwitcher::NativeConstruct()
 {
 	Super::NativeConstruct();
+
+	MainWidgetSwitcher->SetActiveWidgetIndex(1);
 }
